@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:project xmlns:ns0="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <ns0:modelVersion>4.0.0</ns0:modelVersion>
+
+    <ns0:groupId>com.example</ns0:groupId>
+    <ns0:artifactId>my-java11-app</ns0:artifactId>
+    <ns0:version>1.0-SNAPSHOT</ns0:version>
+
+    <ns0:properties>
+        <ns0:maven.compiler.source>11</ns0:maven.compiler.source>
+        <ns0:maven.compiler.target>11</ns0:maven.compiler.target>
+        <ns0:project.build.sourceEncoding>UTF-8</ns0:project.build.sourceEncoding>
+    </ns0:properties>
+
+    <ns0:dependencies>
+        
+        <ns0:dependency>
+            <ns0:groupId>org.junit.jupiter</ns0:groupId>
+            <ns0:artifactId>junit-jupiter-api</ns0:artifactId>
+            <ns0:version>5.12.0</ns0:version>
+            <ns0:scope>test</ns0:scope>
+        </ns0:dependency>
+        <ns0:dependency>
+            <ns0:groupId>org.junit.jupiter</ns0:groupId>
+            <ns0:artifactId>junit-jupiter-engine</ns0:artifactId>
+            <ns0:version>5.12.0</ns0:version>
+            <ns0:scope>test</ns0:scope>
+        </ns0:dependency>
+
+        
+        <ns0:dependency>
+            <ns0:groupId>org.projectlombok</ns0:groupId>
+            <ns0:artifactId>lombok</ns0:artifactId>
+            <ns0:version>1.18.36</ns0:version>
+            <ns0:scope>provided</ns0:scope>
+        </ns0:dependency>
+
+        
+        <ns0:dependency>
+            <ns0:groupId>org.apache.commons</ns0:groupId>
+            <ns0:artifactId>commons-lang3</ns0:artifactId>
+            <ns0:version>3.17.0</ns0:version>
+        </ns0:dependency>
+
+        
+        <ns0:dependency>
+            <ns0:groupId>ch.qos.logback</ns0:groupId>
+            <ns0:artifactId>logback-classic</ns0:artifactId>
+            <ns0:version>1.5.17</ns0:version>
+        </ns0:dependency>
+    </ns0:dependencies>
+
+    <ns0:build>
+        <ns0:plugins>
+            
+            <ns0:plugin>
+                <ns0:groupId>org.apache.maven.plugins</ns0:groupId>
+                <ns0:artifactId>maven-compiler-plugin</ns0:artifactId>
+                <ns0:version>3.8.1</ns0:version>
+                <ns0:configuration>
+                    <ns0:source>11</ns0:source>
+                    <ns0:target>11</ns0:target>
+                </ns0:configuration>
+            </ns0:plugin>
+
+            
+            <ns0:plugin>
+                <ns0:groupId>org.apache.maven.plugins</ns0:groupId>
+                <ns0:artifactId>maven-surefire-plugin</ns0:artifactId>
+                <ns0:version>2.22.0</ns0:version>
+            </ns0:plugin>
+        </ns0:plugins>
+    </ns0:build>
+</ns0:project>
